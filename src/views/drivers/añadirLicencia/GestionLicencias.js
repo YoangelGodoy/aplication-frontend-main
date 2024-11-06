@@ -17,9 +17,9 @@ import {
   CTableDataCell,
 } from '@coreui/react'
 
-  const licencia = [
+  const licenca = [
       { numero: '001', cedula: '30782050', grado: '5ta', sexo:'Femenino',emision: '2023-01-01', expiracion: '2028-01-01', },
-      { numero: '002', cedula: '30651748', grado: '4ta', sexo:'Masculino',emision: '2023-02-01', expiracion: '2028-02-01', },
+      { numero: '002', cedula: '30651748', sexo:'Masculino',emision: '2023-02-01', expiracion: '2028-02-01', },
     ]
  
 
@@ -61,9 +61,6 @@ function GestionLicencias() {
                     name="grado"
                     label="Grado"
                   >
-                    <option value="">Seleccione...</option>
-                    <option value="4ta">4ta</option>
-                    <option value="5ta">5ta</option>
                   </CFormSelect>
                 </CCol>
                 <CCol md={6}>
@@ -81,7 +78,7 @@ function GestionLicencias() {
               <CRow className="mb-3">
                 <CCol md={6}>
                   <CFormInput
-                    type="date"
+                    type="text"
                     id="fechaEmision"
                     name="fechaEmision"
                     label="Fecha de Emision"

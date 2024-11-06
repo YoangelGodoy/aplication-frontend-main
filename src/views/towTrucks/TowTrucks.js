@@ -9,7 +9,7 @@ import {
   CCardHeader,
   CCol,
   CRow,
-  CContainer,
+  CContaiiner,
   CTable,
   CTableHead,
   CTableRow,
@@ -29,7 +29,7 @@ const GTowTrucks = () =>{
       <CContainer>
        <CRow>
         <CCol>
-          <CCard className = "mb-4">
+          <CCard className= "mb-4">
             <CCardHeader>
               <h2>Registrar Nueva Grúa</h2>
             </CCardHeader>
