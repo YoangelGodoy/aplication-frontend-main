@@ -9,7 +9,7 @@ import {
   CCardHeader,
   CCol,
   CRow,
-  CContaiiner,
+  CContainer,
   CTable,
   CTableHead,
   CTableRow,
@@ -101,8 +101,8 @@ const GTowTrucks = () =>{
                     <CTableRow>
                       <CTableDataCell>{towtruck.tuition}</CTableDataCell>
                       <CTableDataCell>{towtruck.model}</CTableDataCell>
-                      <CTableDataCell>{towtruck.type_towtruck}</CTableDataCell>
                       <CTableDataCell>{towtruck.status}</CTableDataCell>
+                      <CTableDataCell>{towtruck.type_towtruck}</CTableDataCell>
                       <CTableDataCell>
                         <CButton className="update">
                          Actualizar
