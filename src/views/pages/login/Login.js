@@ -116,4 +116,19 @@ const Login = () => {
   );
 };
 
+const InputGroup = ({ icon, placeholder, value, onChange, type = 'text' }) => (
+  <CInputGroup className="mb-3">
+    <CInputGroupText>
+      <CIcon icon={icon} />
+    </CInputGroupText>
+    <CFormInput
+      type={type}
+      placeholder={placeholder}
+      autoComplete={type === 'password' ? 'current-password ' : 'username'}
+      value={value}
+      onChange={onChange}
+    />
+  </CInputGroup>
+);
+
 export default Login;
